@@ -25,7 +25,7 @@ function [J, grad, thetas] = nnCostfunction(nn_thetas, topology, X, y, learning_
     thetas{i} = theta(:, 2:end);
   end
   
-  J = (-sum(y_vec(:) .* log(h(:)) + (1-y_vec(:)).*log(1-h(:)))/m)
+  J = (-sum(y_vec(:) .* log(h(:)) + (1-y_vec(:)).*log(1-h(:)))/m);
  
   % Backpropagation
   
